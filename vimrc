@@ -35,6 +35,8 @@ Plug 'ianva/vim-youdao-translater'
 Plug 'airblade/vim-gitgutter'
 set updatetime=100
 
+Plug 'lvht/mru'
+
 
 " 可以在 vim 中使用 tab 补全
 "Plug 'vim-scripts/SuperTab'
@@ -73,6 +75,7 @@ call vundle#begin()
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'benmills/vimux'
+Plugin 'skywind3000/asyncrun.vim'
 call vundle#end() " required
 
 
@@ -417,6 +420,8 @@ hi link Delimiter	Special
 hi link SpecialComment	Special
 hi link Debug		Special
 let g:colors_name = "dante"
+" 背景透明
+hi Normal ctermfg=252 ctermbg=none
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "------------------------------------------------------------------------------
 "  < 判断操作系统是否是 Windows 还是 Linux >
